@@ -1,5 +1,6 @@
 
 import styled from "styled-components";
+import { ICollum } from './types';
 
 export const Container = styled.main`
     width: 100%;
@@ -31,7 +32,7 @@ export const TitleHighlight = styled.h3`
     margin-bottom: 24px;
 `
 
-export const Collum = styled.div`
+export const Collum = styled.div<ICollum>`
     flex:${({flex}) => flex};
     padding-right: 24px;
 
