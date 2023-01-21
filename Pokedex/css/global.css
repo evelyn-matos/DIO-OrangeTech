@@ -12,6 +12,7 @@ body {
     width: 100vw;
     padding: 1rem;
     background-color: #fff;
+    display: block;
     
 }
 
@@ -26,24 +27,233 @@ body {
 
 
 
+/* Pagina  detalhes Pokemon*/
 
+.pokemon-Details {
 
-
-
-
-
-
-/*
-.color-blue {
-    background-color: #49d0b0;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
 }
 
-.color-pink {
-    background-color: #f96c6c;
+.area-pokemon {
+    display: flex;
+    flex-direction: column;
+    
+
+    min-width:300px ;
+    min-height: 550px;
+
+    border-radius: 25px;
+
+    
 }
 
-.color-yellow {
-    background-color: #ffd76f;
+.area-pokemon .area-superior-poke{
+    
+    width: 100%;
+    min-height: 250px;
+    
+
+    padding: 30px 20px 0 20px  ;
+    border-radius: 25px 25px 0px 0px ;
 }
 
-*/
+.navegar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegar img {
+    width: 20px;
+    cursor: pointer;
+}
+
+
+
+.info-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-name h1 {
+    color: #fff;
+    font-size: 25px;
+    margin: 16px 0 10px 0;
+    
+}
+
+.info-name h1::first-letter{
+    text-transform: uppercase;
+}
+
+.info-name ol {
+    list-style: none;
+    display: flex;
+}
+
+.info-name ol li{
+    margin-left: 0px;
+    padding: 5px 15px;
+    
+    border-radius: 15px;
+
+    font-size: 12px;
+    color: #ffff;
+    text-align: center;
+    filter: brightness(1.1);
+}
+
+.info-area ol li:last-child{
+    margin-left: 5px;
+}
+
+.info-number{
+    color: #fff;
+    font-weight: bold;
+}
+
+.imagem-area{
+    width: 300px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    
+}
+
+.imagem-area img {
+    width: 150px;
+    margin-top: -30px;
+    
+}
+
+.area-inferior-poke{
+    background-color: white;
+    width: 100%;
+    min-height: 300px ;
+    
+    border-radius: 25px;
+    padding: 30px 20px 0 20px
+    
+}
+
+.barra-navegar {
+    border-bottom: 1px solid #ccc;
+  
+
+}
+
+.barra-navegar ol {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #ccc;
+    font-size: 13px;
+
+}
+
+.barra-navegar ol li {
+    padding: 10px 5px 5px 0;
+    cursor: pointer;
+}
+
+.active{
+    color: black;
+    border-bottom: 2px solid #7f86b3;
+}
+
+.infos-superior, .infos-inferiores, .lista-states{
+    margin-top: 15px;
+    display: flex;
+}
+
+.infos-superior ul, .infos-inferiores ul, .lista-states ul{
+    list-style: none;
+}
+
+.classe-a, .classe-a2 {
+    font-size: 12px;
+    color: rgb(180, 178, 178);
+}
+
+
+.classe-a li, .classe-b li, .classe-a2 li, .classe-b2 li {
+    margin-bottom: 10px;
+}
+
+.infos-superior ul:last-child{
+    margin-left: 40px;
+}
+
+.infos-inferiores ul:last-child{
+    margin-left: 25px;
+}
+
+.classe-b, .classe-b2 {
+    font-size: 12px;
+    color: black;
+}
+
+.infos-inferiores .genero-1{
+    margin-bottom: 15px;
+}
+
+.about-span{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+.genero img{
+    width: 15px;
+}
+
+/* Infos About */ 
+
+.info-poke-about{
+    display: block;
+}
+
+/* Ifos BaseState*/ 
+
+.info-poke-baseState{
+    display: none;
+}
+
+.classe-a2{
+    margin-right: 30px;
+}
+
+.classe-b2 {
+    margin-right: 20px;
+}
+
+.classe-c2{
+    margin-top: 2px;
+}
+
+.classe-c2 .contentBar {
+    margin-bottom: 19px;
+}
+
+.contentBar{
+    margin: 0px auto;
+    height: 5px;
+    background-color: #ccc;
+    position: relative;
+    width: 140px;
+    border-radius: 5px;
+}
+
+.contentBar .progress-bar {
+    border-radius: 5px;
+    position: absolute;
+    height: 100%;
+    
+}

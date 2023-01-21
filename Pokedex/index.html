@@ -10,7 +10,9 @@
     <!--Importe JavaScript-->
     <script defer src="js/pokemon-model.js"></script>
     <script defer src="js/poke-api.js"></script>
+    <script defer src="js/pokemon-detail.js"></script>
     <script defer src="js/main.js"></script>
+    
     <!--Import Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,6 +34,132 @@
         <div class="pagination">
             <button id=loadMoreButton type="button">Load More</button>
         </div>
+    </section>
+
+        <!--Area de Detalhes do Pokemon-->
+
+    <section class="pokemon-Details">
+        <main class="area-pokemon">
+            <div class="area-superior-poke">
+
+                <div class="navegar">
+                    <img class="voltar"src="./images/icone-voltar.png" alt="voltar">
+                    <img class="favoritar" src="./images/heart-vazado.png" alt="favoritar">
+                </div>
+
+                <div class="info-area">
+                    <div class="info-name">
+                        <h1>Bulbasaur</h1>
+                        <ol id="lista2">
+                            <li class="type1"></li>
+                            <li class="type2 "></li>
+                        </ol>
+                    </div>
+                    <span class="info-number">#001</span>
+                </div>
+
+                <div class="imagem-area">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="">
+                </div>
+                
+            </div>
+            
+            
+
+            <div class="area-inferior-poke">
+                <div class="barra-navegar">
+                    <ol class="lista-navegar">
+                        <li class="about active">About</li>
+                        <li class="baseState ">Base State</li>
+                        <li class="evolution">Evolution</li>
+                        <li class="moves">Moves</li>
+                    </ol>
+                </div>
+                    <!-- Colocar de forma Dinamica-->
+                <div class="info-poke-about">
+                    <div class="infos-superior">
+                        <ul class="classe-a">
+                            <li>Species</li>
+                            <li>Heigth</li>
+                            <li>Weight</li>
+                            <li>Abilities</li>
+                        </ul>
+                        <ul class="classe-b">
+                            <li class="species"></li>
+                            <li class="heigth"></li>
+                            <li class="weight"></li>
+                            <li class="abilities"></li>
+                        </ul>
+                    </div>
+
+                    <span class="about-span">Breeding</span>
+
+                    <div class="infos-inferiores">
+                        <ul class="classe-a inferior">
+                            <li class="genero-1">Gender</li>
+                            <li>Egg Groups</li>
+                            <li>Habitat</li>
+                        </ul>
+                        <ul class="classe-b inferior">
+                            <li class="genero"> <img src="./images/masculino.png" alt=""> 87.5% <img src="./images/feminino.png" alt=""> 12.5%</li>
+                            <li class="eggGroups"></li>
+                            <li class="habitat"></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="info-poke-baseState">
+                    <div class="lista-states">
+                        <ul class="classe-a2">
+                            <li>HP</li>
+                            <li>Attack</li>
+                            <li>Defense</li>
+                            <li>Sp. Atk</li>
+                            <li>Sp. Def</li>
+                            <li>Speed</li>
+                            <li>Total</li>
+                        </ul>
+                        <ul class="classe-b2">
+                            <li class="hp"></li>
+                            <li class="attack"></li>
+                            <li class="defense"></li>
+                            <li class="special-attack"></li>
+                            <li class="special-defense"></li>
+                            <li class="speed"></li>
+                            <li class="total"></li>
+                        </ul>
+                        <div class="classe-c2">
+                            <div class="contentBar">
+                                <div class="progress-bar hp-bar"></div>
+                            </div>
+                            <div class="contentBar">
+                                <div class="progress-bar attack-bar"></div>
+                            </div>
+                            <div class="contentBar">
+                                <div class="progress-bar defense-bar"></div>
+                            </div>
+                            <div class="contentBar">
+                                <div class="progress-bar spAttack-bar"></div>
+                            </div>
+                            <div class="contentBar">
+                                <div class="progress-bar spDefense-bar"></div>
+                            </div>
+                            <div class="contentBar">
+                                <div class="progress-bar speed-bar"></div>
+                            </div>
+                            <div class="contentBar">
+                                <div class="progress-bar total-bar"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+
+        </main>
     </section>
    
 </body>
