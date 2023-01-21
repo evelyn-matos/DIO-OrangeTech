@@ -51,7 +51,9 @@
 
 function showInfoPokemon(json) {
 
-    numberPoke = json.number
+    numberPoke = json.number;
+
+    console.log(numberPoke)
 
     buscarMaisInfo()
 
@@ -270,7 +272,12 @@ async function buscarMaisInfo(){
 }
 
 function showMaisInfos(json2){
-    document.querySelector('.eggGroups').innerHTML = `${json2.eggGroups[0].name}, ${json2.eggGroups[1].name} `
+    if(json2.eggGroups.length == 2){
+        document.querySelector('.eggGroups').innerHTML = `${json2.eggGroups[0].name}, ${json2.eggGroups[1].name} `
+    }else {
+        document.querySelector('.eggGroups').innerHTML = `${json2.eggGroups[0].name}`
+    }
+    
 
     document.querySelector('.habitat').innerHTML = `${json2.habitat}`
 
